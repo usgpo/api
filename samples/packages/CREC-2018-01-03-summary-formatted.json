@@ -1,0 +1,40 @@
+{
+	"title": "Congressional Record Volume 163, Issue 216, (January 3, 2018)",
+	"collectionCode": "CREC",
+	"collectionName": "Congressional Record",
+	"category": "Proceedings of Congress and General Congressional Publications",
+	"dateIssued": "2018-01-03",
+	"detailsLink": "https://www.govinfo.gov/app/details/CREC-2018-01-03",
+	"granulesLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules?offset=0&pageSize=100",
+	"packageId": "CREC-2018-01-03",
+	"download": {
+		"pdfHouseLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/pdf/house",
+		"pdfHouse-bk2Link": "https://api.govinfo.gov/packages/CREC-2018-01-03/pdf/house-bk2",
+		"pdf-bk2Link": "https://api.govinfo.gov/packages/CREC-2018-01-03/pdf-bk2",
+		"pdfExtensions-bk2Link": "https://api.govinfo.gov/packages/CREC-2018-01-03/pdf/extensions-bk2",
+		"pdfExtensionsLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/pdf/extensions",
+		"pdfLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/pdf",
+		"pdfDailyDigestLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/pdf/dailydigest",
+		"pdfDailyDigest-bk1Link": "https://api.govinfo.gov/packages/CREC-2018-01-03/pdf/dailydigest-bk1",
+		"modsLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/mods",
+		"premisLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/premis",
+		"zipLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/zip"
+	},
+	"branch": "legislative",
+	"pages": "80",
+	"governmentAuthor1": "Congress",
+	"suDocClassNumber": "X 1.1/A:X/A.",
+	"documentType": "CREC",
+	"congress": "115",
+	"session": "2",
+	"volume": "163",
+	"issue": "216",
+	"bookCount": "2",
+	"publisher": "U.S. Government Publishing Office",
+	"otherIdentifier": {
+		"migrated-doc-id": "CR03JA18",
+		"ils-system-id": "000568013",
+		"stock-number": "752-002-00000-2"
+	},
+	"lastModified": "2018-04-03T16:34:46Z"
+}

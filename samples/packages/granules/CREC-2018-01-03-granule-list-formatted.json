@@ -1,0 +1,397 @@
+{
+	"count": 97,
+	"offset": 0,
+	"pageSize": 100,
+	"nextPage": null,
+	"previousPage": null,
+	"granules": [{
+			"title": "HONORING THE SERVICE OF LORIE GRINNAN",
+			"granuleId": "CREC-2018-01-03-pt1-PgE1769-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgE1769-2/summary"
+		}, {
+			"title": "IN CELEBRATION OF THE LIFE OF DOROTHY MAY WILSON",
+			"granuleId": "CREC-2018-01-03-pt1-PgE1769-3",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgE1769-3/summary"
+		}, {
+			"title": "Senate",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10433",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10433/summary"
+		}, {
+			"title": "DESIGNATION OF THE SPEAKER PRO TEMPORE",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10433-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10433-2/summary"
+		}, {
+			"title": "PRAYER",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10433-3",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10433-3/summary"
+		}, {
+			"title": "THE JOURNAL",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10433-4",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10433-4/summary"
+		}, {
+			"title": "PLEDGE OF ALLEGIANCE",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10433-5",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10433-5/summary"
+		}, {
+			"title": "ANNOUNCEMENT BY THE SPEAKER PRO TEMPORE",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10433-6",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10433-6/summary"
+		}, {
+			"title": "RECESS",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10433-7",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10433-7/summary"
+		}, {
+			"title": "AFTER RECESS",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10433-8",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10433-8/summary"
+		}, {
+			"title": "SENATE ENROLLED BILL SIGNED",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10433-9",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10433-9/summary"
+		}, {
+			"title": "SINE DIE ADJOURNMENT",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10433-10",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10433-10/summary"
+		}, {
+			"title": "EXECUTIVE COMMUNICATIONS, ETC.",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10433-11",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10433-11/summary"
+		}, {
+			"title": "PUBLIC BILLS AND RESOLUTIONS",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10434",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10434/summary"
+		}, {
+			"title": "Constitutional Authority Statement",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10434-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10434-2/summary"
+		}, {
+			"title": "Constitutional Authority Statement for H.R. 4735",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10434-3",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10434-3/summary"
+		}, {
+			"title": "Constitutional Authority Statement for H.R. 4736",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10434-4",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10434-4/summary"
+		}, {
+			"title": "ADDITIONAL SPONSORS",
+			"granuleId": "CREC-2018-01-03-pt1-PgH10434-5",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt1-PgH10434-5/summary"
+		}, {
+			"title": "Daily Digest/Highlights + Senate",
+			"granuleId": "CREC-2018-01-03-pt2-PgD1",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgD1/summary"
+		}, {
+			"title": "Daily Digest/Senate Committee Meetings",
+			"granuleId": "CREC-2018-01-03-pt2-PgD4",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgD4/summary"
+		}, {
+			"title": "Daily Digest/House of Representatives",
+			"granuleId": "CREC-2018-01-03-pt2-PgD4-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgD4-2/summary"
+		}, {
+			"title": "Daily Digest/House Committee Meetings",
+			"granuleId": "CREC-2018-01-03-pt2-PgD5",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgD5/summary"
+		}, {
+			"title": "Daily Digest/COMMITTEE MEETINGS FOR 2018-01-04",
+			"granuleId": "CREC-2018-01-03-pt2-PgD5-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgD5-2/summary"
+		}, {
+			"title": "Daily Digest/CONGRESSIONAL PROGRAM AHEAD",
+			"granuleId": "CREC-2018-01-03-pt2-PgD5-3",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgD5-3/summary"
+		}, {
+			"title": "Daily Digest/Next Meeting of the SENATE + Next Meeting of the HOUSE OF REPRESENTATIVES + Other End Matter",
+			"granuleId": "CREC-2018-01-03-pt2-PgD5-4",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgD5-4/summary"
+		}, {
+			"title": "SENATE COMMITTEE MEETINGS",
+			"granuleId": "CREC-2018-01-03-pt2-PgE1-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgE1-2/summary"
+		}, {
+			"title": "House of Representatives",
+			"granuleId": "CREC-2018-01-03-pt2-PgH-FrontMatter",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgH-FrontMatter/summary"
+		}, {
+			"title": "House of Representatives",
+			"granuleId": "CREC-2018-01-03-pt2-PgH1-4",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgH1-4/summary"
+		}, {
+			"title": "DESIGNATION OF THE SPEAKER PRO TEMPORE",
+			"granuleId": "CREC-2018-01-03-pt2-PgH1-5",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgH1-5/summary"
+		}, {
+			"title": "PRAYER",
+			"granuleId": "CREC-2018-01-03-pt2-PgH1-6",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgH1-6/summary"
+		}, {
+			"title": "PLEDGE OF ALLEGIANCE",
+			"granuleId": "CREC-2018-01-03-pt2-PgH1-7",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgH1-7/summary"
+		}, {
+			"title": "ANNOUNCEMENT BY THE SPEAKER PRO TEMPORE",
+			"granuleId": "CREC-2018-01-03-pt2-PgH1-8",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgH1-8/summary"
+		}, {
+			"title": "ADJOURNMENT",
+			"granuleId": "CREC-2018-01-03-pt2-PgH1-9",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgH1-9/summary"
+		}, {
+			"title": "REPORTS OF COMMITTEES ON PUBLIC BILLS AND RESOLUTIONS",
+			"granuleId": "CREC-2018-01-03-pt2-PgH1-10",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgH1-10/summary"
+		}, {
+			"title": "Senate",
+			"granuleId": "CREC-2018-01-03-pt2-PgS-FrontMatter",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS-FrontMatter/summary"
+		}, {
+			"title": "Senate",
+			"granuleId": "CREC-2018-01-03-pt2-PgS1-12",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS1-12/summary"
+		}, {
+			"title": "PRAYER",
+			"granuleId": "CREC-2018-01-03-pt2-PgS1-13",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS1-13/summary"
+		}, {
+			"title": "PLEDGE OF ALLEGIANCE",
+			"granuleId": "CREC-2018-01-03-pt2-PgS1-14",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS1-14/summary"
+		}, {
+			"title": "APPOINTMENT OF ACTING PRESIDENT PRO TEMPORE",
+			"granuleId": "CREC-2018-01-03-pt2-PgS1-15",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS1-15/summary"
+		}, {
+			"title": "CERTIFICATE OF ELECTION AND CERTIFICATE OF APPOINTMENT",
+			"granuleId": "CREC-2018-01-03-pt2-PgS1-16",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS1-16/summary"
+		}, {
+			"title": "ADMINISTRATION OF OATH OF OFFICE",
+			"granuleId": "CREC-2018-01-03-pt2-PgS1-17",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS1-17/summary"
+		}, {
+			"title": "RECOGNITION OF THE MAJORITY LEADER",
+			"granuleId": "CREC-2018-01-03-pt2-PgS2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS2/summary"
+		}, {
+			"title": "WELCOMING NEW SENATORS",
+			"granuleId": "CREC-2018-01-03-pt2-PgS2-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS2-2/summary"
+		}, {
+			"title": "FUNDING THE GOVERNMENT",
+			"granuleId": "CREC-2018-01-03-pt2-PgS2-3",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS2-3/summary"
+		}, {
+			"title": "IRAN",
+			"granuleId": "CREC-2018-01-03-pt2-PgS2-4",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS2-4/summary"
+		}, {
+			"title": "TRIBUTE TO ORRIN HATCH",
+			"granuleId": "CREC-2018-01-03-pt2-PgS2-5",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS2-5/summary"
+		}, {
+			"title": "MEASURE PLACED ON THE CALENDAR--S. 2274",
+			"granuleId": "CREC-2018-01-03-pt2-PgS2-6",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS2-6/summary"
+		}, {
+			"title": "RECOGNITION OF THE MINORITY LEADER",
+			"granuleId": "CREC-2018-01-03-pt2-PgS2-7",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS2-7/summary"
+		}, {
+			"title": "WELCOMING NEW SENATORS",
+			"granuleId": "CREC-2018-01-03-pt2-PgS2-8",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS2-8/summary"
+		}, {
+			"title": "A NEW DIRECTION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS3",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS3/summary"
+		}, {
+			"title": "FOREIGN POLICY AND PRESIDENTIAL MORAL AUTHORITY",
+			"granuleId": "CREC-2018-01-03-pt2-PgS3-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS3-2/summary"
+		}, {
+			"title": "LETTER OF RESIGNATION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS4",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS4/summary"
+		}, {
+			"title": "RESERVATION OF LEADER TIME",
+			"granuleId": "CREC-2018-01-03-pt2-PgS4-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS4-2/summary"
+		}, {
+			"title": "MORNING BUSINESS",
+			"granuleId": "CREC-2018-01-03-pt2-PgS4-3",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS4-3/summary"
+		}, {
+			"title": "FUNDING THE GOVERNMENT",
+			"granuleId": "CREC-2018-01-03-pt2-PgS4-4",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS4-4/summary"
+		}, {
+			"title": "NET NEUTRALITY",
+			"granuleId": "CREC-2018-01-03-pt2-PgS5",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS5/summary"
+		}, {
+			"title": "OFFSHORE DRILLING REGULATION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS8",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS8/summary"
+		}, {
+			"title": "TAX REFORM BILL AND WORK BEFORE THE SENATE",
+			"granuleId": "CREC-2018-01-03-pt2-PgS10",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS10/summary"
+		}, {
+			"title": "DACA",
+			"granuleId": "CREC-2018-01-03-pt2-PgS11",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS11/summary"
+		}, {
+			"title": "CLIMATE CHANGE",
+			"granuleId": "CREC-2018-01-03-pt2-PgS13",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS13/summary"
+		}, {
+			"title": "IRAN",
+			"granuleId": "CREC-2018-01-03-pt2-PgS16",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS16/summary"
+		}, {
+			"title": "TAX REFORM BILL AND GOVERNMENT REGULATION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS16-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS16-2/summary"
+		}, {
+			"title": "NOMINATION OF JOHN ROOD",
+			"granuleId": "CREC-2018-01-03-pt2-PgS18",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS18/summary"
+		}, {
+			"title": "HONORING DOUGLAS COUNTY SHERIFF'S DEPUTY ZACKARI PARRISH",
+			"granuleId": "CREC-2018-01-03-pt2-PgS19",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS19/summary"
+		}, {
+			"title": "CONCLUSION OF MORNING BUSINESS",
+			"granuleId": "CREC-2018-01-03-pt2-PgS19-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS19-2/summary"
+		}, {
+			"title": "EXECUTIVE SESSION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS19-3",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS19-3/summary"
+		}, {
+			"title": "LETTER OF RESIGNATION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS20",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS20/summary"
+		}, {
+			"title": "ORDER OF BUSINESS",
+			"granuleId": "CREC-2018-01-03-pt2-PgS20-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS20-2/summary"
+		}, {
+			"title": "LEGISLATIVE SESSION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS20-3",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS20-3/summary"
+		}, {
+			"title": "EXECUTIVE SESSION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS20-4",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS20-4/summary"
+		}, {
+			"title": "LEGISLATIVE SESSION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS20-5",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS20-5/summary"
+		}, {
+			"title": "EXECUTIVE SESSION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS20-6",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS20-6/summary"
+		}, {
+			"title": "LEGISLATIVE SESSION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS20-7",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS20-7/summary"
+		}, {
+			"title": "EXECUTIVE SESSION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS20-8",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS20-8/summary"
+		}, {
+			"title": "LEGISLATIVE SESSION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS20-9",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS20-9/summary"
+		}, {
+			"title": "EXECUTIVE SESSION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS21",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS21/summary"
+		}, {
+			"title": "LEGISLATIVE SESSION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS21-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS21-2/summary"
+		}, {
+			"title": "VOTE EXPLANATION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS21-3",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS21-3/summary"
+		}, {
+			"title": "TRIBUTE TO MATT MARTIN",
+			"granuleId": "CREC-2018-01-03-pt2-PgS21-4",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS21-4/summary"
+		}, {
+			"title": "ADDITIONAL STATEMENTS",
+			"granuleId": "CREC-2018-01-03-pt2-PgS21-5",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS21-5/summary"
+		}, {
+			"title": "TRIBUTE TO LINDA CLOUTIER-NAMDAR",
+			"granuleId": "CREC-2018-01-03-pt2-PgS21-6",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS21-6/summary"
+		}, {
+			"title": "MESSAGES FROM THE HOUSE RECEIVED DURING ADJOURNMENT",
+			"granuleId": "CREC-2018-01-03-pt2-PgS22",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS22/summary"
+		}, {
+			"title": "MEASURES PLACED ON THE CALENDAR",
+			"granuleId": "CREC-2018-01-03-pt2-PgS23",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS23/summary"
+		}, {
+			"title": "MEASURES READ THE FIRST TIME",
+			"granuleId": "CREC-2018-01-03-pt2-PgS23-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS23-2/summary"
+		}, {
+			"title": "ENROLLED BILLS PRESENTED",
+			"granuleId": "CREC-2018-01-03-pt2-PgS23-3",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS23-3/summary"
+		}, {
+			"title": "EXECUTIVE AND OTHER COMMUNICATIONS",
+			"granuleId": "CREC-2018-01-03-pt2-PgS23-4",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS23-4/summary"
+		}, {
+			"title": "INTRODUCTION OF BILLS AND JOINT RESOLUTIONS",
+			"granuleId": "CREC-2018-01-03-pt2-PgS23-5",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS23-5/summary"
+		}, {
+			"title": "ADDITIONAL COSPONSORS",
+			"granuleId": "CREC-2018-01-03-pt2-PgS23-6",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS23-6/summary"
+		}, {
+			"title": "STATEMENTS ON INTRODUCED BILLS AND JOINT RESOLUTIONS",
+			"granuleId": "CREC-2018-01-03-pt2-PgS24",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS24/summary"
+		}, {
+			"title": "AMENDMENTS SUBMITTED AND PROPOSED",
+			"granuleId": "CREC-2018-01-03-pt2-PgS24-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS24-2/summary"
+		}, {
+			"title": "TEXT OF AMENDMENTS",
+			"granuleId": "CREC-2018-01-03-pt2-PgS24-3",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS24-3/summary"
+		}, {
+			"title": "VETERANS E-HEALTH AND TELEMEDICINE SUPPORT ACT OF 2017",
+			"granuleId": "CREC-2018-01-03-pt2-PgS25",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS25/summary"
+		}, {
+			"title": "MEASURE READ THE FIRST TIME--H.R. 4667",
+			"granuleId": "CREC-2018-01-03-pt2-PgS25-2",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS25-2/summary"
+		}, {
+			"title": "ORDERS FOR THURSDAY, JANUARY 4, 2018",
+			"granuleId": "CREC-2018-01-03-pt2-PgS25-3",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS25-3/summary"
+		}, {
+			"title": "ADJOURNMENT UNTIL 11 A.M. TOMORROW",
+			"granuleId": "CREC-2018-01-03-pt2-PgS25-4",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS25-4/summary"
+		}, {
+			"title": "NOMINATIONS RETURNED TO THE PRESIDENT",
+			"granuleId": "CREC-2018-01-03-pt2-PgS25-5",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS25-5/summary"
+		}, {
+			"title": "CONFIRMATION",
+			"granuleId": "CREC-2018-01-03-pt2-PgS26",
+			"granuleLink": "https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-01-03-pt2-PgS26/summary"
+		}
+	]
+}
