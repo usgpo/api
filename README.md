@@ -1,6 +1,6 @@
 # api
 
-The govinfo api is intended to provide external data users with a simple means to programmatically access **govinfo** content and metadata. This initial release provides functionality to retrieve lists of packages added or modified within a given time frame, summary metadata for packages, direct access to content and metadata formats, and equivalent granule information.
+The **govinfo** api is intended to provide data users with a simple means to programmatically access the **govinfo** content and metadata which is stored in self describing packages. This initial release provides functionality to retrieve lists of packages added or modified within a given time frame, summary metadata for packages, direct access to content and metadata formats, and equivalent granule information.
 
 Interactive documentation using the OpenAPI/swagger specification will be available at https://api.govinfo.gov/docs at launch. We will announce via the repo and other channels when the API is available.
 
