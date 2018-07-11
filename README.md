@@ -19,8 +19,9 @@ If no version is specified in requests, the latest version of the api will be pr
 See [Issues](https://github.com/usgpo/api/issues) to submit an issue or comment on future development priorities.
 
 See the labels below for additional information:
-[Features](https://github.com/usgpo/api/labels/Features) - list of features that are currently under consideration by the govinfo team - your feedback is welcome!
-[Upcoming](https://github.com/usgpo/api/labels/Upcoming) - list of features that are currently under development and will be available in our next release. May also be tagged with a release label (Month Year) e.g. "July 2018".
+
+- [Features](https://github.com/usgpo/api/labels/Features) - list of features that are currently under consideration by the govinfo team. Your feedback is welcome!
+- [Upcoming](https://github.com/usgpo/api/labels/Upcoming) - list of features that are currently under development and will be available in our next release. May also be tagged with a release label (Month Year) e.g. "July 2018".
 
 ## About the Data
 
@@ -28,11 +29,11 @@ Data available in the API represents official publications from all three branch
 
 ## Quickstart
 
-### Collections Service | [samples](https://www.github.com/usgpo/api/samples/collections/)
+### Collections Service | [samples](/samples/collections/)
 
-#### Base collections request | [sample](https://www.github.com/usgpo/api/samples/collections/collections.json) | [formatted](https://www.github.com/usgpo/api/samples/collections/collections-formatted.json)
+#### Base collections request | [sample](/samples/collections/collections.json) | [formatted](/samples/collections/collections-formatted.json)
 
-A Simple starting point is the following GET request:
+A simple starting point is the following GET request:
 https://api.govinfo.gov/collections
 
 This request will provide a json list of the collections available within our system, including a `collectionCode`, `collectionName`, `packageCount`, and `granuleCount` (as applicable). All json response are returned in a minified format.
@@ -41,25 +42,25 @@ This request will provide a json list of the collections available within our sy
 
 The following request allows you to specify a collection and get a list of packageIds that have been added or modified within the specified time period. `collectionCode` and `startDate` are required, as are `offset` and `pageSize`. Optionally, you can include the `endDate`. Currently, we are not limiting the `pageSize`, but we may restrict this based on performance needs.
 
-#### Congressional Bills with startDate only (BILLS) | [sample](https://www.github.com/usgpo/api/samples/collections/BILLS-sample.json) | [formatted](https://www.github.com/usgpo/api/samples/collections/BILLS-sample-formatted.json)
+#### Congressional Bills with startDate only (BILLS) | [sample](/samples/collections/BILLS-sample.json) | [formatted](/samples/collections/BILLS-sample-formatted.json)
 
 https://api.govinfo.gov/collections/BILLS/2018-01-01T00:00:00Z/?offset=0&pageSize=100&api_key={YOUR_API_KEY}
 
 
 
-#### Congressional Bills with endDate | [sample](https://www.github.com/usgpo/api/samples/collections/BILLS-sample-endDate.json) | [formatted](https://www.github.com/usgpo/api/samples/collections/BILLS-sample-endDate-formatted.json)
+#### Congressional Bills with endDate | [sample](/samples/collections/BILLS-sample-endDate.json) | [formatted](/samples/collections/BILLS-sample-endDate-formatted.json)
 
 https://api.govinfo.gov/collections/BILLS/2018-04-03T00:00:00Z/2018-04-03T23:59:59Z?offset=150&pageSize=150&api_key={YOUR_API_KEY}
 
-#### Congressional Record (CREC) | [sample](https://www.github.com/usgpo/api/samples/collections/CREC-sample.json) | [formatted](https://www.github.com/usgpo/api/samples/collections/CREC-sample-formatted.json)
+#### Congressional Record (CREC) | [sample](/samples/collections/CREC-sample.json) | [formatted](/samples/collections/CREC-sample-formatted.json)
 
 https://api.govinfo.gov/collections/CREC/2018-04-01T00:00:00Z/2018-04-17T23:59:59Z?offset=0&pageSize=10&api_key={YOUR_API_KEY}
 
-### United States Court Opinions (USCOURTS) | [sample](https://www.github.com/usgpo/api/samples/collections/USCOURTS-sample.json) | [formatted](https://www.github.com/usgpo/api/samples/collections/USCOURTS-sample-formatted.json)
+#### United States Court Opinions (USCOURTS) | [sample](/samples/collections/USCOURTS-sample.json) | [formatted](/samples/collections/USCOURTS-sample-formatted.json)
 
 https://api.govinfo.gov/collections/USCOURTS/2018-04-03T00:00:00Z?offset=0&pageSize=25&api_key={YOUR_API_KEY}
 
-## Packages service | [samples](https://www.github.com/usgpo/api/samples/packages/)
+### Packages service | [samples](/samples/packages/)
 
 This service allows you to specify a **govinfo** `packageId` and retrieve available forms of content and metadata. A `/summary` json response is available that includes links and basic metadata about the package - generally equivalent to the information available on the details page for that package.
 
@@ -79,31 +80,31 @@ From the summary, you can get access to all available content and metadata forma
 },
 ```
 
-### Congressional Bills (BILLS) | [sample](https://www.github.com/usgpo/api/samples/packages/BILLS-115hr1625enr-summary.json) | [formatted](https://www.github.com/usgpo/api/samples/packages/BILLS-115hr1625enr-summary-formatted.json)
+#### Congressional Bills (BILLS) | [sample](/samples/packages/BILLS-115hr1625enr-summary.json) | [formatted](/samples/packages/BILLS-115hr1625enr-summary-formatted.json)
 
 https://api.govinfo.gov/packages/BILLS-115hr1625enr/summary?api_key={YOUR_API_KEY}
 
-### Congressional Record (CREC) | [sample](https://www.github.com/usgpo/api/samples/packages/CREC-2018-01-03-summary.json) | [formatted](https://www.github.com/usgpo/api/samples/packages/CREC-2018-01-03-summary-formatted.json)
+#### Congressional Record (CREC) | [sample](/samples/packages/CREC-2018-01-03-summary.json) | [formatted](/samples/packages/CREC-2018-01-03-summary-formatted.json)
 
 https://api.govinfo.gov/packages/CREC-2018-01-03/summary?api_key={YOUR_API_KEY}
 
-### Federal Register (FR) | [sample](https://www.github.com/usgpo/api/samples/packages/FR-2018-04-12-summary.json) | [formatted](https://www.github.com/usgpo/api/samples/packages/FR-2018-04-12-summary-formatted.json)
+#### Federal Register (FR) | [sample](/samples/packages/FR-2018-04-12-summary.json) | [formatted](/samples/packages/FR-2018-04-12-summary-formatted.json)
 
 https://api.govinfo.gov/packages/FR-2018-04-12/summary?api_key={YOUR_API_KEY}
 
-## Granule lists
+### Granule lists
 
 You can also get a list of available granules for a specified package by adding `/granules`, `offset` and `pageSize`
 
-### Congressional Hearings (CHRG) | [sample](https://www.github.com/usgpo/api/samples/packages/granules/CHRG-107shrg82483-granules.json) | [formatted](https://www.github.com/usgpo/api/samples/packages/granules/CHRG-107shrg82483-granules.json)
+#### Congressional Hearings (CHRG) | [sample](/samples/packages/granules/CHRG-107shrg82483-granules.json) | [formatted](/samples/packages/granules/CHRG-107shrg82483-granules.json)
 
 https://api.govinfo.gov/packages/CHRG-107shrg82483/granules?offset=0&pageSize=10&api_key={YOUR_API_KEY}
 
-### Congressional Record (CREC) | [sample](https://www.github.com/usgpo/api/samples/packages/granules/CREC-2018-01-03-granules.json) | [formatted](https://www.github.com/usgpo/api/samples/packages/granules/CREC-2018-01-03-granules.json)
+#### Congressional Record (CREC) | [sample](/samples/packages/granules/CREC-2018-01-03-granules.json) | [formatted](/samples/packages/granules/CREC-2018-01-03-granules.json)
 
 https://api.govinfo.gov/packages/CREC-2018-01-03/granules?offset=0&pageSize=100&api_key={YOUR_API_KEY}
 
-### Federal Register (FR)  | [sample](https://www.github.com/usgpo/api/samples/packages/granules/FR-2018-04-12-granules.json) | [formatted](https://www.github.com/usgpo/api/samples/packages/granules/CREC-2018-01-03-granules.json)
+#### Federal Register (FR)  | [sample](/samples/packages/granules/FR-2018-04-12-granules.json) | [formatted](/samples/packages/granules/CREC-2018-01-03-granules.json)
 
 https://api.govinfo.gov/packages/FR-2018-04-12/granules?offset=0&pageSize=100&api_key={YOUR_API_KEY}
 
@@ -111,10 +112,10 @@ This provides a list of titles, granuleIds and links to the granule summary, whe
 
 Similar to the packages service, you can retrieve a json summary for any granule, which will return basic metadata as well as links to all available content and metadata.
 
-### Congressional Record (CREC) | [sample](https://www.github.com/usgpo/api/samples/packages/granules/CREC-2018-03-01-pt1-PgD211-granule-summary.json) | [formatted](https://www.github.com/usgpo/api/samples/packages/granules/CREC-2018-03-01-pt1-PgD211-granule-summary-formatted.json)
+#### Congressional Record (CREC) | [sample](/samples/packages/granules/CREC-2018-03-01-pt1-PgD211-granule-summary.json) | [formatted](/samples/packages/granules/CREC-2018-03-01-pt1-PgD211-granule-summary-formatted.json)
 
 https://api.govinfo.gov/packages/CREC-2018-01-03/granules/CREC-2018-03-01-pt1-PgD211/summary?api_key={YOUR_API_KEY}
 
-### Federal Register (FR) | [sample](https://www.github.com/usgpo/api/samples/packages/granules/FR-2018-04-12_2018-07777-granule-summary.json) | [formatted](https://www.github.com/usgpo/api/samples/packages/granules/FR-2018-04-12_2018-07777-granule-summary-formatted.json)
+#### Federal Register (FR) | [sample](/samples/packages/granules/FR-2018-04-12_2018-07777-granule-summary.json) | [formatted](/samples/packages/granules/FR-2018-04-12_2018-07777-granule-summary-formatted.json)
 
 https://api.govinfo.gov/packages/FR-2018-04-12/granules/2018-07777/summary?api_key={YOUR_API_KEY}
