@@ -68,12 +68,12 @@ From the summary, you can get access to all available content and metadata forma
 
 ```json
 "download": {
-"txtLink": "http://api.govinfo.gov/packages/BILLS-115hr1625enr/htm",
-"xmlLink": "http://api.govinfo.gov/packages/BILLS-115hr1625enr/xml",
-"pdfLink": "http://api.govinfo.gov/packages/BILLS-115hr1625enr/pdf",
-"modsLink": "http://api.govinfo.gov/packages/BILLS-115hr1625enr/mods",
-"premisLink": "http://api.govinfo.gov/packages/BILLS-115hr1625enr/premis",
-"zipLink": "http://api.govinfo.gov/packages/BILLS-115hr1625enr/zip"
+"txtLink": "https://api.govinfo.gov/packages/BILLS-115hr1625enr/htm",
+"xmlLink": "https://api.govinfo.gov/packages/BILLS-115hr1625enr/xml",
+"pdfLink": "https://api.govinfo.gov/packages/BILLS-115hr1625enr/pdf",
+"modsLink": "https://api.govinfo.gov/packages/BILLS-115hr1625enr/mods",
+"premisLink": "https://api.govinfo.gov/packages/BILLS-115hr1625enr/premis",
+"zipLink": "https://api.govinfo.gov/packages/BILLS-115hr1625enr/zip"
 },
 "related": {
 "billStatusLink": "https://www.govinfo.gov/bulkdata/BILLSTATUS/115/hr/BILLSTATUS-115hr1625.xml"
