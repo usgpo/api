@@ -109,7 +109,8 @@ https://api.govinfo.gov/packages/FR-2018-04-12/granules?offset=0&pageSize=100&ap
 
 This provides a list of titles, granuleIds and links to the granule summary, where you can access all available content and metadata formats, including the zip.
 
-###Granules
+### Granules
+
 Similar to the package summary, you can retrieve a json summary for any granule, which will return basic metadata as well as links to all available content and metadata.
 
 #### Congressional Record (CREC) | [sample](/samples/packages/granules/CREC-2018-03-01-pt1-PgD211-granule-summary.json) | [formatted](/samples/packages/granules/CREC-2018-03-01-pt1-PgD211-granule-summary-formatted.json)
