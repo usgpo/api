@@ -1,7 +1,5 @@
 # api
 
->As part of an upcoming release and upgrade to our system, we will be reindexing all content in the coming weeks. This will result in updates to all content on sitemaps and the govinfo API. You will see updates to `lastmod` values for all content in the system, which may result in larger than normal responses for collections requests. We will provide a more detailed update when we have a firm timeframe for when this will take effect on the public site and the API. 
-
 The **govinfo** api is intended to provide data users with a simple means to programmatically access **govinfo** content and metadata, which is stored in self-describing packages. This initial release provides functionality to retrieve lists of packages added or modified within a given time frame, summary metadata for packages, direct access to content and metadata formats, and equivalent granule information.
 
 Interactive documentation using the OpenAPI/swagger specification is available at https://api.govinfo.gov/docs.
