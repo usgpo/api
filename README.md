@@ -64,6 +64,35 @@ https://api.govinfo.gov/collections/CREC/2018-07-01T00:00:00Z?offset=0&pageSize=
 
 https://api.govinfo.gov/collections/USCOURTS/2018-04-03T00:00:00Z?offset=0&pageSize=25&api_key=DEMO_KEY
 
+### Published Service
+
+This is similar to the _collections_ service in that it provides users with an easy way to get a list of packages by date. The **difference** is that this service provides packages based on dateIssued -- this generally corresponds to the publication date of the content itself, rather than the govinfo system update time for a publication. 
+
+#### Format:
+
+https:// api.govinfo.gov/published/`dateIssuedStartDate`/`dateIssuedEndDate`?offset=`startingRecord`&pageSize=`number of records in call`&collection=`comma-separated list of values`&api_key=`your api.data.gov api key`
+
+#### Examples:
+
+BILLS issued between January and July 2019:
+https://api.govinfo.gov/published/2019-01-01/2019-07-31?offset=0&pageSize=100&collection=BILLS&api_key=DEMO_KEY 
+
+Federal Register and CFR packages in 2019:
+https://api.govinfo.gov/published/2019-01-01/2019-12-31?offset=0&pageSize=100&collection=CFR,FR&modifiedSince=2020-01-01T00:00:00&api_key=DEMO_KEY  
+
+
+#### Required parameters
+- `dateIssuedStartDate`: the earliest package you are requesting by dateIssued – YYYY-MM-DD
+- `offset`: starting record – usually 0. If pageSize=10, you could advance to the next page of results by applying `offset=10`.
+- `pageSize`: number of records to return per request (e.g. 10)
+- `collection`: comma-separated list of collections that you are requesting, e.g. https://api.govinfo.gov/published/2019-01-01/2019-12-31?offset=0&pageSize=100&collection=BILLS,BILLSTATUS&api_key=DEMO_KEY  - see [/collections](https://api.govinfo.gov/collections?api_key=DEMO_KEY) for a list of collections by code and human-readable name.
+
+#### Optional parameters:
+- `dateIssuedEndDate`: the latest package you are requesting by dateIssued – YYYY-MM-DD
+- `docClass`:  Filter the results by overarching collection-specific categories. The values vary from collection to collection. For example, docClass in BILLS corresponds with Bill Type --e.g. s, hr, hres, sconres. CREC (the Congressional Record) has docClass by CREC section:  HOUSE, SENATE, DIGEST, and EXTENSIONS
+- `congress`: congress number (e.g. “116”)
+- `modifiedSince`: equivalent to the startDate parameter in the collections service which is based on lastModified– allows you to request only packages that have been modified since a given date/time – useful for tracking updates. Requires ISO 8601 format -- e.g. 2020-02-28T00:00:00Z
+
 ### Packages service | [samples](/samples/packages/)
 
 This service allows you to specify a **govinfo** `packageId` and retrieve available forms of content and metadata. A `/summary` json response is available that includes links and basic metadata about the package - generally equivalent to the information available on the details page for that package.
