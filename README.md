@@ -154,3 +154,13 @@ https://api.govinfo.gov/packages/CREC-2018-07-10/granules/CREC-2018-07-10-pt1-Pg
 #### Federal Register (FR) | [sample](/samples/packages/granules/FR-2018-04-12_2018-07777-granule-summary.json) | [formatted](/samples/packages/granules/FR-2018-04-12_2018-07777-granule-summary-formatted.json)
 
 https://api.govinfo.gov/packages/FR-2018-04-12/granules/2018-07777/summary?api_key=DEMO_KEY
+
+A number of collections have specific additional collection-specific metadata values included in the API response, such as social media information in the CDIR collection. Here are some examples:
+
+https://api.govinfo.gov/packages/CDIR-2018-10-29/granules/CDIR-2018-10-29-DE-S-2/summary?api_key=DEMO_KEY
+
+https://api.govinfo.gov/packages/CDIR-2018-10-29/granules/CDIR-2018-10-29-AL-H-6/summary?api_key=DEMO_KEY
+
+https://api.govinfo.gov/packages/CDIR-2018-10-29/granules/CDIR-2018-10-29-CA-H-33/summary?api_key=DEMO_KEY
+
+https://api.govinfo.gov/packages/CDIR-2018-10-29/granules/CDIR-2018-10-29-ME-S-1/summary?api_key=DEMO_KEY
