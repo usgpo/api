@@ -113,6 +113,12 @@ From the summary, you can get access to all available content and metadata forma
 },
 ```
 
+Note that for some packages, zip files are generated upon request, so you may receive a HTTP503 response with a Retry-After header indicating a number of seconds to wait before checking back for the generated zip file. A message body with the following will also appear: 
+
+```json
+{"message":"Generating ZIP file. Please retry your request again after 30 seconds"}
+```
+
 #### Congressional Bills (BILLS) | [sample](/samples/packages/BILLS-115hr1625enr-summary.json) | [formatted](/samples/packages/BILLS-115hr1625enr-summary-formatted.json)
 
 https://api.govinfo.gov/packages/BILLS-115hr1625enr/summary?api_key=DEMO_KEY
