@@ -172,3 +172,35 @@ https://api.govinfo.gov/packages/CDIR-2018-10-29/granules/CDIR-2018-10-29-AL-H-6
 https://api.govinfo.gov/packages/CDIR-2018-10-29/granules/CDIR-2018-10-29-CA-H-33/summary?api_key=DEMO_KEY
 
 https://api.govinfo.gov/packages/CDIR-2018-10-29/granules/CDIR-2018-10-29-ME-S-1/summary?api_key=DEMO_KEY
+
+### Related service 
+The related service allows users to identify and retrieve content and metadata about related content within govinfo based on an access ID. This feature will continue to evolve as we implement additional relationships. 
+
+Pattern: `https://api.govinfo.gov/related/accessId`<br/>
+Example: https://api.govinfo.gov/related/BILLS-116hr748enr?api_key=DEMO_KEY
+
+This will return a list of relationships, which then can be followed to return specific documents, with relevant high-level metadata, e.g.:
+
+https://api.govinfo.gov/related/BILLS-116hr748enr/BILLS?api_key=DEMO_KEY
+
+
+
+#### Available relationships
+
+From BILLS, BILLSTATUS, or PLAW packageIds:
+- Related Bill Versions (BILLS)
+- Bill History (HOB)
+- Presidential Signing Statements and Remarks (CPD)
+- Public and Private Laws (PLAW)
+- Congressional Committee Prints (coming soon!)
+- Congressional Reports
+- U.S. Code References
+- Statutes at Large References
+
+From FR documents:
+- Related FR documents by Regulation Identifier Number (RIN) 
+- Code of Federal Regulations Citations
+
+From CHRG:
+- Related Hearings - often parts or errata
+
