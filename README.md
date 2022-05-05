@@ -4,9 +4,17 @@ The **govinfo** api is intended to provide data users with a simple means to pro
 
 Interactive documentation using the OpenAPI/swagger specification is available at https://api.govinfo.gov/docs.
 
+## Table of Contents
+1. [Keys](#keys)
+2. [Versioning](#versioning)
+3. [Issues](#issues)
+4. [About the Data](#about-the-data)
+5. [Quickstart](#quickstart) - sample requests
+6. [Error Messages](#error-messages)
+
 ## Keys
 
-This API requires the use of an API.data.gov key - [signup here](https://api.data.gov/signup/). If you already have one, go to the [/docs page](https://api.govinfo.gov/docs), click on Authorize, and enter your key. Then you can make all the requests normally.
+This API requires the use of an API.data.gov key - [signup here](https://api.govinfo.gov/api-signup/). If you already have one, go to the [/docs page](https://api.govinfo.gov/docs), click on Authorize, and enter your key. Then you can make all the requests normally.
 
 You can send your API key in a few different ways. See api.data.gov for more information on [key usage](https://api.data.gov/docs/api-key/).
 
@@ -203,4 +211,34 @@ From FR documents:
 
 From CHRG:
 - Related Hearings - often parts or errata
+
+## Error Messages
+
+Occasionally, the API will return a non-200 response. Here is an explanation of some typical error codes:
+
+### 503 for granule MODS or ZIP requests with a message like "Generating MODS/ZIP file. Please try again in 30 seconds"
+
+The govinfo system generally caches granule MODS and ZIP files based on requests from users. Sometimes a user will generate the first request for a given package or granule and the ZIP or MODS file is not in the cache. In this case, the system will inform the requester that the file is being regenerated. AS part of this response, the system will also return a `Retry-After` header with a value of `30`, indicating that users should retry the request in 30 seconds. 
+
+Sometimes the process for generating the MODS or ZIP file will take longer than that 30 seconds. In this case, the system will again send the same 503 message with another `Retry-After` header until the file is available.
+
+There are some collections where the MODS and ZIP files are automatically pre-cached, but these caches are refreshed continually, resulting in older cached files being removed in an attempt to balance performance with storage concerns.
+
+
+### 429 Over Rate limit
+
+The govinfo API has a rate limit on it to prevent usage from a single user from overtaxing our resources and impacting requests from other users. This should be generally high enough to meet most users needs.
+
+Requests to the govinfo API will return the following headers to indicate the overall rate limit and time remaining. The following example is for the DEMO_KEY:
+
+```
+X-RateLimit-Limit: 40
+X-RateLimit-Remaining: 39
+```
+
+Regular user keys have a higher default limit.
+
+### 401 Unauthorized - API_KEY_MISSING
+
+Getting this means that the request didn't include an API key. See [Keys](#keys) above to get a key and learn how to use the API. You can use the DEMO_KEY as a temporary solution, but this has a lower limit. Getting a key for api.govinfo.gov also grants you access to a number of other [Federal APIs](https://api.data.gov/docs/)
 
