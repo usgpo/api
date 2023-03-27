@@ -18,6 +18,8 @@ This API requires the use of an API.data.gov key - [signup here](https://api.gov
 
 You can send your API key in a few different ways. See api.data.gov for more information on [key usage](https://api.data.gov/docs/api-key/).
 
+Information on rate limits can be found [here](https://api.data.gov/docs/rate-limits/). The rate limit is tracked on an rolling hourly basis.
+
 ## Versioning
 
 One of the API's design goals is to minimize breaking changes, but we are implementing versioning to allow users to specify the version required. We have not determined the number of versions that we plan to support at this time, but it will be based on usage and we will communicate with known users prior to deprecating any version.
