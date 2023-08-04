@@ -51,28 +51,28 @@ This request will provide a json list of the collections available within our sy
 
 ### Collection update
 
-The following request allows you to specify a collection and get a list of packageIds that have been added or modified within the specified time period. `collectionCode` and `startDate` are required, as are `offset` and `pageSize`. Optionally, you can include the `endDate`. Currently, we are not limiting the `pageSize`, but we may restrict this based on performance needs.
+The following request allows you to specify a collection and get a list of packageIds that have been added or modified within the specified time period. `collectionCode` and `startDate` are required, as is `pageSize`. The API requires either `offsetMark` or `offset` - the former is preferred, because it allows returning more than 10,000 total results. Optionally, you can include the `endDate`. `pageSize` is limited to 1000 results.
 
->**Note:** There is a 10000 item limit on collections responses. This means that if your update range is too broad, you may need to narrow it down using the `endDate` parameter. [Example](https://github.com/usgpo/api/issues/19#issuecomment-428292313)
+For offsetMark, start with `offsetMark=*` - the API will respond with the correct offsetMark for the next page as part of the `nextPage` key.
 
 ##### startDate/endDate usage
 `startDate` and `endDate` are parameters used to search against the `lastModified` value for the individual packages. This represents the time that this package was added or updated - equivalent to the value listed in the sitemaps. It is not the equivalent to Date Published, Date Issued, or Date Ingested in MODS.
 
 #### Congressional Bills with startDate only (BILLS) | [sample](/samples/collections/BILLS-sample.json) | [formatted](/samples/collections/BILLS-sample-formatted.json)
 
-https://api.govinfo.gov/collections/BILLS/2018-01-01T00:00:00Z/?offset=0&pageSize=100&api_key=DEMO_KEY
+https://api.govinfo.gov/collections/BILLS/2023-01-01T00:00:00Z/?offsetMark=*&pageSize=100&api_key=DEMO_KEY
 
 #### Congressional Bills with endDate | [sample](/samples/collections/BILLS-sample-endDate.json) | [formatted](/samples/collections/BILLS-sample-endDate-formatted.json)
 
-https://api.govinfo.gov/collections/BILLS/2018-07-03T00:00:00Z/2018-07-10T23:59:59Z?offset=150&pageSize=150&api_key=DEMO_KEY
+https://api.govinfo.gov/collections/BILLS/2022-07-03T00:00:00Z/2018-07-10T23:59:59Z?offsetMark=*&pageSize=150&api_key=DEMO_KEY
 
 #### Congressional Record (CREC) | [sample](/samples/collections/CREC-sample.json) | [formatted](/samples/collections/CREC-sample-formatted.json)
 
-https://api.govinfo.gov/collections/CREC/2018-07-01T00:00:00Z?offset=0&pageSize=10&api_key=DEMO_KEY
+https://api.govinfo.gov/collections/CREC/2023-01-01T00:00:00Z?offsetMark=*&pageSize=10&api_key=DEMO_KEY
 
 #### United States Court Opinions (USCOURTS) | [sample](/samples/collections/USCOURTS-sample.json) | [formatted](/samples/collections/USCOURTS-sample-formatted.json)
 
-https://api.govinfo.gov/collections/USCOURTS/2018-04-03T00:00:00Z?offset=0&pageSize=25&api_key=DEMO_KEY
+https://api.govinfo.gov/collections/USCOURTS/2023-04-03T00:00:00Z?offsetMark=*&pageSize=25&api_key=DEMO_KEY
 
 ### Published Service
 
@@ -80,20 +80,21 @@ This is similar to the _collections_ service in that it provides users with an e
 
 #### Format:
 
-https:// api.govinfo.gov/published/`dateIssuedStartDate`/`dateIssuedEndDate`?offset=`startingRecord`&pageSize=`number of records in call`&collection=`comma-separated list of values`&api_key=`your api.data.gov api key`
+https:// api.govinfo.gov/published/`dateIssuedStartDate`/`dateIssuedEndDate`?offsetMark=`startingRecord`&pageSize=`number of records in call`&collection=`comma-separated list of values`&api_key=`your api.data.gov api key`
 
 #### Examples:
 
 BILLS issued between January and July 2019:
-https://api.govinfo.gov/published/2019-01-01/2019-07-31?offset=0&pageSize=100&collection=BILLS&api_key=DEMO_KEY 
+https://api.govinfo.gov/published/2019-01-01/2019-07-31?offsetMark=*&pageSize=100&collection=BILLS&api_key=DEMO_KEY 
 
 Federal Register and CFR packages in 2019:
-https://api.govinfo.gov/published/2019-01-01/2019-12-31?offset=0&pageSize=100&collection=CFR,FR&modifiedSince=2020-01-01T00:00:00&api_key=DEMO_KEY  
+https://api.govinfo.gov/published/2019-01-01/2019-12-31?offset=*&pageSize=100&collection=CFR,FR&modifiedSince=2020-01-01T00:00:00&api_key=DEMO_KEY  
 
 
 #### Required parameters
 - `dateIssuedStartDate`: the earliest package you are requesting by dateIssued – YYYY-MM-DD
-- `offset`: starting record – usually 0. If pageSize=10, you could advance to the next page of results by applying `offset=10`.
+- `offsetMark`: starting record. The initial request should always be `*`, and the API will provide the correct offsetMark value for the next page's information in the `nextPage` key.
+  - **Note:** offsetMark effectively replaces the `offset` parameter. The advantage of the the `offsetMark` is that it allows traversals of the results past the first 10,000 recors
 - `pageSize`: number of records to return per request (e.g. 10)
 - `collection`: comma-separated list of collections that you are requesting, e.g. https://api.govinfo.gov/published/2019-01-01/2019-12-31?offset=0&pageSize=100&collection=BILLS,BILLSTATUS&api_key=DEMO_KEY  - see [/collections](https://api.govinfo.gov/collections?api_key=DEMO_KEY) for a list of collections by code and human-readable name.
 
@@ -143,19 +144,19 @@ https://api.govinfo.gov/packages/FR-2018-04-12/summary?api_key=DEMO_KEY
 
 ### Granule lists
 
-You can also get a list of available granules for a specified package by adding `/granules`, `offset` and `pageSize`
+You can also get a list of available granules for a specified package by adding `/granules`, `offsetMark` and `pageSize`
 
 #### Congressional Hearings (CHRG) | [sample](/samples/packages/granules/CHRG-107shrg82483-granules.json) | [formatted](/samples/packages/granules/CHRG-107shrg82483-granules.json)
 
-https://api.govinfo.gov/packages/CHRG-107shrg82483/granules?offset=0&pageSize=10&api_key=DEMO_KEY
+https://api.govinfo.gov/packages/CHRG-107shrg82483/granules?offsetMark=*&pageSize=10&api_key=DEMO_KEY
 
 #### Congressional Record (CREC) | [sample](/samples/packages/granules/CREC-2018-01-03-granules.json) | [formatted](/samples/packages/granules/CREC-2018-01-03-granules.json)
 
-https://api.govinfo.gov/packages/CREC-2018-01-03/granules?offset=0&pageSize=100&api_key=DEMO_KEY
+https://api.govinfo.gov/packages/CREC-2018-01-03/granules?offsetMark=*&pageSize=100&api_key=DEMO_KEY
 
 #### Federal Register (FR)  | [sample](/samples/packages/granules/FR-2018-04-12-granules.json) | [formatted](/samples/packages/granules/CREC-2018-01-03-granules.json)
 
-https://api.govinfo.gov/packages/FR-2018-04-12/granules?offset=0&pageSize=100&api_key=DEMO_KEY
+https://api.govinfo.gov/packages/FR-2018-04-12/granules?offsetMark=0&pageSize=100&api_key=DEMO_KEY
 
 This provides a list of titles, granuleIds and links to the granule summary, where you can access all available content and metadata formats, including the zip.
 
