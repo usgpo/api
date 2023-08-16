@@ -61,7 +61,7 @@
 								"exec": [
 									"var jsonData = pm.response.json();\r",
 									"let count = jsonData.count;\r",
-									"pm.environment.set(\"nonHistoricalCount\", count)\r",
+									"pm.collectionVariables.set(\"nonHistoricalCount\", count)\r",
 									"\r",
 									""
 								],
