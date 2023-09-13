@@ -177,6 +177,15 @@ For an overview, see the [Search Service Overview](https://www.govinfo.gov/featu
 
 **Note:** This service is currently a **Public Preview** prior to reaching full production status. If you have feedback or enhancement requests, please [create a new issue](https://github.com/usgpo/api/issues/new) and describe your goals.
 
+### Recommended sorts.field parameters
+Currently, we are supporting the following fields for sorting - we will be making updates in the future to clarify this, but we do not plan on breaking the values listed below:
+| field  | sortOrder options |UI Equivalent|Note|
+| ------------- | ------------- |------------- |------------- |
+| score  | DESC  |Relevance|relevance as determined by the search engine, use of ASC is not allowed|
+| publishdate  | ASC,DESC  |Date Old to New/New to Old||
+| lastModified | ASC,DESC | N/A |sorts based on most recent add/update in GovInfo|
+| title | ASC,DESC| Alphabetical(Z-A)/Alphabetical(A-Z)| | 
+
 ## Retrieval-focused endpoints
 
 The following endpoints are most frequently used after discovering results via one of the Discovery-focused endpoints.
