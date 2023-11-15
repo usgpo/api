@@ -63,19 +63,19 @@ This request will provide a json list of the collections available within our sy
 
 #### Collection update
 
-The following request allows you to specify a collection and get a list of packageIds that have been added or modified within the specified time period. `collectionCode` and `startDate` are required, as is `pageSize`. Optionally, you can include the `endDate`. `pageSize` is limited to 1000 results.
+The following request allows you to specify a collection and get a list of packageIds that have been added or modified within the specified time period. `collectionCode` and `lastModifiedStartDate` are required, as is `pageSize`. Optionally, you can include the `lastModifiedEndDate`. `pageSize` is limited to 1000 results.
 
 For `offsetMark`, start with `offsetMark=*` - the API will respond with the correct offsetMark for the next page as part of the `nextPage` key.
 
-##### startDate/endDate usage
-`startDate` and `endDate` are parameters used to search against the `lastModified` value for the individual packages. This represents the time that this package was added or updated - equivalent to the value listed in the sitemaps. It is not the equivalent to Date Published, Date Issued, or Date Ingested in MODS.
+##### lastModifiedStartDate/lastModifiedEndDate usage
+`lastModifiedStartDate` and `lastModifiedEndDate` are parameters used to search against the `lastModified` value for the individual packages. This represents the time that this package was added or updated - equivalent to the value listed in the sitemaps. It is not the equivalent to Date Published, Date Issued, or Date Ingested in MODS.
 
-##### Congressional Bills with startDate only (BILLS) 
+##### Congressional Bills with lastModifiedStartDate only (BILLS) 
 [sample](/samples/collections/BILLS-sample.json) | [formatted](/samples/collections/BILLS-sample-formatted.json)
 
 https://api.govinfo.gov/collections/BILLS/2023-01-01T00:00:00Z/?offsetMark=*&pageSize=100&api_key=DEMO_KEY
 
-##### Congressional Bills with endDate 
+##### Congressional Bills with lastModifiedEndDate 
 [sample](/samples/collections/BILLS-sample-endDate.json) | [formatted](/samples/collections/BILLS-sample-endDate-formatted.json)
 
 https://api.govinfo.gov/collections/BILLS/2022-07-03T00:00:00Z/2018-07-10T23:59:59Z?offsetMark=*&pageSize=150&api_key=DEMO_KEY
