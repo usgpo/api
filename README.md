@@ -14,7 +14,7 @@ Interactive documentation using the OpenAPI/swagger specification is available a
 
 ## Keys
 
-This API requires the use of an API.data.gov key - [signup here](https://api.govinfo.gov/api-signup/). If you already have one, go to the [/docs page](https://api.govinfo.gov/docs), click on Authorize, and enter your key. Then you can make all the requests normally.
+This API requires the use of an API.data.gov key - [signup here](https://www.govinfo.gov/api-signup). If you already have one, go to the [/docs page](https://api.govinfo.gov/docs), click on Authorize, and enter your key. Then you can make all the requests normally.
 
 You can send your API key in a few different ways. See api.data.gov for more information on [key usage](https://api.data.gov/docs/api-key/).
 
