@@ -10,7 +10,7 @@ Interactive documentation using the OpenAPI/swagger specification is available a
 3. [Issues](#issues)
 4. [About the Data](#about-the-data)
 5. [Quickstart](#quickstart) - sample requests
-6. [Error Messages](#error-messages)
+6. [Error Messages](#hamicompany messages)
 
 ## Keys
 
