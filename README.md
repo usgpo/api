@@ -1,6 +1,6 @@
 # api
 
-The **govinfo** api is intended to provide data users with a simple means to programmatically access **govinfo** content and metadata, which is stored in self-describing packages. This initial release provides functionality to retrieve lists of packages added or modified within a given time frame, summary metadata for packages, direct access to content and metadata formats, and equivalent granule information.
+The **GovInfo** api is intended to provide data users with a simple means to programmatically access GovInfo content and metadata, which is stored in self-describing packages. This initial release provides functionality to retrieve lists of packages added or modified within a given time frame, summary metadata for packages, direct access to content and metadata formats, and equivalent granule information.
 
 Interactive documentation using the OpenAPI/swagger specification is available at https://api.govinfo.gov/docs.
 
@@ -37,19 +37,56 @@ See the labels below for additional information:
 
 ## About the Data
 
-Data available in the API represents official publications from all three branches of the Federal Government as made available on [GPO's](https://www.gpo.gov) [**govinfo**](https://www.govinfo.gov). For more information about the data that's available from **govinfo**, see our [about](https://www.govinfo.gov/about) page and [learn what's available](https://www.govinfo.gov/help/whats-available).
+Data available in the API represents official publications from all three branches of the Federal Government as made available on [GPO's](https://www.gpo.gov) [GovInfo](https://www.govinfo.gov). For more information about the data that's available from GovInfo, see our [about](https://www.govinfo.gov/about) page and [learn what's available](https://www.govinfo.gov/help/whats-available).
 
 ## Quickstart
 This section is designed to help provide quick examples of how to use the GovInfo API. Generally, the endpoints of the API can be broken up into two main groupings:
 
 - **Discovery**
+  - [search](#search-service)
   - [collections](#collections-service)
   - [published](#published-service)
   - [related](#related-service)
-  - [search](#search-service)
 - **Retrieval**
   - [packages](#packages-service)
   - [granules](#granules-service)
+
+## Discovery endpoints
+Use these endpoints to find content based on search, collection, official publish date, or relationships to other content on GovInfo. 
+
+### Search Service
+
+The Search Service allows for programmatic requests against the GovInfo search engine to return results similar to the results on the GovInfo user interface.
+
+This requires a POST request. For easy examples, download [Postman](https://www.postman.com/downloads/) and import the [Postman collection here](https://github.com/usgpo/api/tree/main/samples/search/search-service.postman_collection.json.postman)
+
+Here is a sample curl request to the Search Service
+```curlrc
+curl --location 'https://api.govinfo.gov/search' \
+--data '{
+    "query":"collection:(USCOURTS) and naturesuit:(Securities, Commodities, Exchange) courttype:appellate",
+    "pageSize":"100",
+    "offsetMark":"*",
+    "sorts":[
+        {
+            "field":"score",
+            "sortOrder":"DESC"
+        }
+    ]
+}'
+```
+
+For an overview, see the [Search Service Overview](https://www.govinfo.gov/features/search-service-overview) page on GovInfo.
+
+### Recommended sorts.field parameters
+Currently, we are supporting the following fields for sorting - we will be making updates in the future to clarify this, but we do not plan on breaking the values listed below:
+| field  | sortOrder options |UI Equivalent|Note|
+| ------------- | ------------- |------------- |------------- |
+| score  | DESC  |Relevance|relevance as determined by the search engine, use of ASC is not allowed|
+| publishdate  | ASC,DESC  |Date Old to New/New to Old||
+| lastModified | ASC,DESC | N/A |sorts based on most recent add/update in GovInfo|
+| title | ASC,DESC| Alphabetical(Z-A)/Alphabetical(A-Z)| | 
+
 
 ### Collections Service
 [samples](/samples/collections/)
@@ -63,7 +100,7 @@ This request will provide a json list of the collections available within our sy
 
 #### Collection update
 
-The following request allows you to specify a collection and get a list of packageIds that have been added or modified within the specified time period. `collectionCode` and `lastModifiedStartDate` are required, as is `pageSize`. Optionally, you can include the `lastModifiedEndDate`. `pageSize` is limited to 1000 results.
+The following request allows you to specify a collection and get a list of packageIds that have been added or modified within the specified time period. `collectionCode` and `lastModifiedStartDate` are required, as is `pageSize`. Optionally, you can include the `lastModifiedEndDate`. `pageSize` is limited to **1000** results.
 
 For `offsetMark`, start with `offsetMark=*` - the API will respond with the correct offsetMark for the next page as part of the `nextPage` key.
 
@@ -73,26 +110,26 @@ For `offsetMark`, start with `offsetMark=*` - the API will respond with the corr
 ##### Congressional Bills with lastModifiedStartDate only (BILLS) 
 [sample](/samples/collections/BILLS-sample.json) | [formatted](/samples/collections/BILLS-sample-formatted.json)
 
-https://api.govinfo.gov/collections/BILLS/2023-01-01T00:00:00Z/?offsetMark=*&pageSize=100&api_key=DEMO_KEY
+https://api.govinfo.gov/collections/BILLS/2025-01-01T00:00:00Z/?offsetMark=*&pageSize=100&api_key=DEMO_KEY
 
 ##### Congressional Bills with lastModifiedEndDate 
 [sample](/samples/collections/BILLS-sample-endDate.json) | [formatted](/samples/collections/BILLS-sample-endDate-formatted.json)
 
-https://api.govinfo.gov/collections/BILLS/2022-07-03T00:00:00Z/2018-07-10T23:59:59Z?offsetMark=*&pageSize=150&api_key=DEMO_KEY
+https://api.govinfo.gov/collections/BILLS/2025-07-03T00:00:00Z/2025-12-10T23:59:59Z?offsetMark=*&pageSize=150&api_key=DEMO_KEY
 
 ##### Congressional Record (CREC) 
 [sample](/samples/collections/CREC-sample.json) | [formatted](/samples/collections/CREC-sample-formatted.json)
 
-https://api.govinfo.gov/collections/CREC/2023-01-01T00:00:00Z?offsetMark=*&pageSize=10&api_key=DEMO_KEY
+https://api.govinfo.gov/collections/CREC/2025-10-01T00:00:00Z?offsetMark=*&pageSize=10&api_key=DEMO_KEY
 
 ##### United States Court Opinions (USCOURTS) 
 [sample](/samples/collections/USCOURTS-sample.json) | [formatted](/samples/collections/USCOURTS-sample-formatted.json)
 
-https://api.govinfo.gov/collections/USCOURTS/2023-04-03T00:00:00Z?offsetMark=*&pageSize=25&api_key=DEMO_KEY
+https://api.govinfo.gov/collections/USCOURTS/2025-04-03T00:00:00Z?offsetMark=*&pageSize=25&api_key=DEMO_KEY
 
 ### Published Service
 
-This is similar to the _collections_ service in that it provides users with an easy way to get a list of packages by date. The **difference** is that this service provides packages based on dateIssued -- this generally corresponds to the publication date of the content itself, rather than the govinfo system update time for a publication.
+This is similar to the _collections_ service in that it provides users with an easy way to get a list of packages by date. The **difference** is that this service provides packages based on dateIssued -- this generally corresponds to the publication date of the content itself, rather than the GovInfo system update time for a publication.
 
 #### Format
 
@@ -121,7 +158,7 @@ https://api.govinfo.gov/published/2019-01-01/2019-12-31?offset=*&pageSize=100&co
 - `modifiedSince`: equivalent to the startDate parameter in the collections service which is based on lastModified– allows you to request only packages that have been modified since a given date/time – useful for tracking updates. Requires ISO 8601 format -- e.g. 2020-02-28T00:00:00Z
 
 ### Related service 
-The related service allows users to identify and retrieve content and metadata about related content within govinfo based on an access ID. This feature will continue to evolve as we implement additional relationships. 
+The related service allows users to identify and retrieve content and metadata about related content within GovInfo based on an access ID. This feature will continue to evolve as we implement additional relationships. 
 
 Pattern: `https://api.govinfo.gov/related/accessId`<br/>
 Example: https://api.govinfo.gov/related/BILLS-116hr748enr?api_key=DEMO_KEY
@@ -151,40 +188,6 @@ From FR documents:
 From CHRG:
 - Related Hearings - often parts or errata
 
-### Search Service
-
-The Search Service allows for programmatic requests against the GovInfo search engine to return results similar to the results on the GovInfo user interface.
-
-This requires a POST request. For easy examples, download [Postman](https://www.postman.com/downloads/) and import the [Postman collection here](https://github.com/usgpo/api/tree/main/samples/search/search-service.postman_collection.json.postman)
-
-Here is a sample cURL request to the Search Service
-```curlrc
-curl --location 'https://api.govinfo.gov/search' \
---data '{
-    "query":"collection:(USCOURTS) and naturesuit:(Securities, Commodities, Exchange) courttype:appellate",
-    "pageSize":"100",
-    "offsetMark":"*",
-    "sorts":[
-        {
-            "field":"score",
-            "sortOrder":"DESC"
-        }
-    ]
-}'
-```
-
-For an overview, see the [Search Service Overview](https://www.govinfo.gov/features/search-service-overview) page on GovInfo.
-
-**Note:** This service is currently a **Public Preview** prior to reaching full production status. If you have feedback or enhancement requests, please [create a new issue](https://github.com/usgpo/api/issues/new) and describe your goals.
-
-### Recommended sorts.field parameters
-Currently, we are supporting the following fields for sorting - we will be making updates in the future to clarify this, but we do not plan on breaking the values listed below:
-| field  | sortOrder options |UI Equivalent|Note|
-| ------------- | ------------- |------------- |------------- |
-| score  | DESC  |Relevance|relevance as determined by the search engine, use of ASC is not allowed|
-| publishdate  | ASC,DESC  |Date Old to New/New to Old||
-| lastModified | ASC,DESC | N/A |sorts based on most recent add/update in GovInfo|
-| title | ASC,DESC| Alphabetical(Z-A)/Alphabetical(A-Z)| | 
 
 ## Retrieval-focused endpoints
 
@@ -192,7 +195,7 @@ The following endpoints are most frequently used after discovering results via o
 ### Packages Service 
 [samples](/samples/packages/)
 
-This service allows you to specify a **govinfo** `packageId` and retrieve available forms of content and metadata. A `/summary` json response is available that includes links and basic metadata about the package - generally equivalent to the information available on the details page for that package.
+This service allows you to specify a GovInfo `packageId` and retrieve available forms of content and metadata. A `/summary` json response is available that includes links and basic metadata about the package - generally equivalent to the information available on the details page for that package.
 
 From the summary, you can get access to all available content and metadata formats for a package. Here is a sample download section for the BILLS-115hr1625enr example below, including a link to the related Billstatus package:
 
