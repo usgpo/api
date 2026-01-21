@@ -9,8 +9,9 @@ Interactive documentation using the OpenAPI/swagger specification is available a
 2. [Versioning](#versioning)
 3. [Issues](#issues)
 4. [About the Data](#about-the-data)
-5. [Quickstart](#quickstart) - sample requests
-6. [Error Messages](#error-messages)
+5. [API Quickstart](#api-quickstart) - sample requests
+6. [Model Context Protocol](docs/mcp.md)
+7. [Error Messages](#error-messages)
 
 ## Keys
 
@@ -39,7 +40,7 @@ See the labels below for additional information:
 
 Data available in the API represents official publications from all three branches of the Federal Government as made available on [GPO's](https://www.gpo.gov) [GovInfo](https://www.govinfo.gov). For more information about the data that's available from GovInfo, see our [about](https://www.govinfo.gov/about) page and [learn what's available](https://www.govinfo.gov/help/whats-available).
 
-## Quickstart
+## API Quickstart
 This section is designed to help provide quick examples of how to use the GovInfo API. Generally, the endpoints of the API can be broken up into two main groupings:
 
 - **Discovery**
