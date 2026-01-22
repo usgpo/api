@@ -1,3 +1,6 @@
+> [!NOTE]
+> The GovInfo Model Context Protocol (MCP) server is now available as a public preview. The server enables users to integrate the latest GovInfo information into their Large Language Model workflows. During the public preview, developers are encouraged to provide feedback for future enhancements. See [MCP documentation](https://github.com/usgpo/api/blob/main/docs/mcp.md) for more information. Please provide [feedback via an issue using the MCP label](https://github.com/usgpo/api/issues/new) in this repository.
+
 # api
 
 The **GovInfo** api is intended to provide data users with a simple means to programmatically access GovInfo content and metadata, which is stored in self-describing packages. This initial release provides functionality to retrieve lists of packages added or modified within a given time frame, summary metadata for packages, direct access to content and metadata formats, and equivalent granule information.
