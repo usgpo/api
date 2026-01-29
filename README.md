@@ -22,7 +22,11 @@ This API requires the use of an API.data.gov key - [signup here](https://www.gov
 
 You can send your API key in a few different ways. See api.data.gov for more information on [key usage](https://api.data.gov/docs/api-key/).
 
-Information on rate limits can be found [here](https://api.data.gov/docs/rate-limits/). The rate limit is tracked on an rolling hourly basis.
+Information on rate limits can be found [here](https://api.data.gov/docs/rate-limits/). The rate limit is tracked on an rolling hourly basis. Here are the current default rate limits:
+
+- 36,000 requests per hour (Primary Rate limit)
+- 1,200 requests per minute
+- 40 requests per second
 
 ## Versioning
 
@@ -293,7 +297,7 @@ Occasionally, the API will return a non-200 response. Here is an explanation of 
 
 ### 503 for granule MODS or ZIP requests
 
-The govinfo system generally caches granule MODS and ZIP files based on requests from users. Sometimes a user will generate the first request for a given package or granule and the ZIP or MODS file is not in the cache. In this case, the system will inform the requester that the file is being regenerated. AS part of this response, the system will also return a `Retry-After` header with a value of `30`, indicating that users should retry the request in 30 seconds. 
+The GovInfo system generally caches granule MODS and ZIP files based on requests from users. Sometimes a user will generate the first request for a given package or granule and the ZIP or MODS file is not in the cache. In this case, the system will inform the requester that the file is being regenerated. AS part of this response, the system will also return a `Retry-After` header with a value of `30`, indicating that users should retry the request in 30 seconds. 
 
 Sometimes the process for generating the MODS or ZIP file will take longer than that 30 seconds. In this case, the system will again send the same 503 message with another `Retry-After` header until the file is available.
 
@@ -302,9 +306,9 @@ There are some collections where the MODS and ZIP files are automatically pre-ca
 
 ### 429 Over Rate limit
 
-The govinfo API has a rate limit on it to prevent usage from a single user from overtaxing our resources and impacting requests from other users. This should be generally high enough to meet most users needs.
+The GovInfo API has a rate limit on it to prevent usage from a single user from overtaxing our resources and impacting requests from other users. This should be generally high enough to meet most users needs.
 
-Requests to the govinfo API will return the following headers to indicate the overall rate limit and time remaining. The following example is for the DEMO_KEY:
+Requests to the GovInfo API will return the following headers to indicate the overall rate limit and time remaining. The following example is for the DEMO_KEY:
 
 ```
 X-RateLimit-Limit: 40
