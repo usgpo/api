@@ -4,6 +4,9 @@ This is a public preview of the GovInfo MCP server, intended to allow LLM+MCP us
 
 **Public Preview**: GPO has built a minimum viable product to gather feedback from the community for enhancements to optimally support LLM access to GovInfo content and metadata.
 
+> [!IMPORTANT]
+> We're aware of users experiencing 5XX errors and are working to deploy a fix in the coming days. Thank you for your patience!
+
 As [feedback](#feedback) is provided, the GovInfo team will evaluate and prioritize issues for future development and improvements.
 
 ## What Is Model Context Protocol
