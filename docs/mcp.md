@@ -29,6 +29,7 @@ Most MCP clients will expose a JSON file that you can edit, usually named `mcp.j
         "x-api-key": "YOUR_GOVINFO_API_KEY"
       }
     }
+  }
 }
 ```
 
